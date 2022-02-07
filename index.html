@@ -4,38 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <nav id="main-navigation">
+        <img src="" alt="logo">
         <ul>
-            <li><a href="#about">about</a></li>
+            <li>
+                <a href="#about">about</a>
+                <ul>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#technology">technology</a></li>
+                </ul>
+            </li>
             <li><a href="/blog">blog</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
-    <div id="about">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis vel voluptatibus beatae necessitatibus dolore veniam ad fuga, odit unde quae perspiciatis. Obcaecati aperiam ratione corrupti autem provident ab facilis!</p>
-        <h2>Technology</h2>
-        <div id="technology">
-            <div class="badge">HTML</div>
-            <div class="badge">CSS</div>
-            <div class="badge">Javascript</div>
+    <main>
+        <div id="main">
+            <img src="./assets/images/andrew-svk-0s9oD70F-l4-unsplash.jpg" alt="logo">
+            <div id="slogan">
+                <p>This text will be the center of attention</p>
+            </div>
         </div>
-    </div>
-    <div id="contact">
-        <form action="">
-            <label for="name">Name</label><br>
-            <input type="text" name="name"><br>
-            <label for="subject">Subject</label><br>
-            <input type="text" name="subject"><br>
-            <label for="email">Email</label><br>
-            <input type="email"><br>
-            <label for="body">Body</label><br>
-            <textarea name="body" id="" cols="30" rows="10"></textarea>
-        </form>
-    </div>
+        <div id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis vel voluptatibus beatae necessitatibus dolore veniam ad fuga, odit unde quae perspiciatis. Obcaecati aperiam ratione corrupti autem provident ab facilis!</p>
+            <h2>Technology</h2>
+            <div id="technology">
+                <div class="badge">HTML</div>
+                <div class="badge">CSS</div>
+                <div class="badge">Javascript</div>
+            </div>
+            <h2>Projects</h2>
+            <div id="projects">
+                <p>This will be a grid with tiles that flip</p>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <form action="">
+                <label for="name">Name</label><br>
+                <input type="text" name="name"><br>
+                <label for="subject">Subject</label><br>
+                <input type="text" name="subject"><br>
+                <label for="email">Email</label><br>
+                <input type="email"><br>
+                <label for="body">Body</label><br>
+                <textarea name="body" id="" cols="30" rows="10"></textarea><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
     <footer>
         <ul>
             <li><a href="">linkedin</a></li>
